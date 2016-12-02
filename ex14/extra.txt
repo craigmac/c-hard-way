@@ -1,0 +1,15 @@
+How to break it:
+* Remove forward declarations to confuse compiler and cause it to complain
+about functions
+* Try adding 1 to argc in main()'s print_arguments() so it goes past
+end of argv array. Debug it with gdb/lldb.
+
+Extra credit:
+e1 - Rewrite so can_print_it() is not needed
+e2 - have print_arguments figure out how long each arg string is by using the
+strlen() function, and then pass that length to print_letters(). Then rewrite
+print_letters() so it only processes this fixed length and doesn't rely on the
+'\0' terminator. You'll need to include <string.h> for this.
+e3 - Use man to look up isalpha() and isblank(). Use similar functions to print
+out only digits or other characters.
+e4 - Read about how others format their functions. Avoid K&R syntax.
