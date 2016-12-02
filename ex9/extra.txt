@@ -1,0 +1,11 @@
+Break it:
+b1 - Forget to init first int i. Depending on what i starts with, the loop might not
+run at all, or run for a very long time.
+b2 - forget to init the second loop's i so that it retains the value from end
+of the first loop. Now your second loop might or might not run.
+b3 - forget to do a i++ increment at the end of the loop and you'll get a
+infinite loop. What happens?
+
+Extra credit:
+e1 - make the loop count backward by using i-- starting at 25 and going to 0.
+e2 - write a few more complex while-loops using what you know so far.

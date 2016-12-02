@@ -1,0 +1,11 @@
+Break it:
+b1 - Remove the else at the end, and the program won't catch the edge case.
+b2 - Change the && and || so you get an or instead of an and test and see how that
+works.
+
+Extra credit:
+e1 - Research online the different boolean operators.
+e2 - write a few more test cases for this program.
+e3 - is the first test really saying the right thing? To you the first arg, 0, is
+not the same as the first arg the user entered. Fix it.
+
